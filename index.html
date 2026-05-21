@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadi Kopi Tembilahan</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #FDFBF7; /* Cream lembut */
+            color: #2C3E35; /* Hijau sage gelap */
+            line-height: 1.6;
+        }
+
+        /* HEADER / HERO */
+        header {
+            text-align: center;
+            padding: 90px 20px;
+            background: linear-gradient(rgba(253, 251, 247, 0.85), rgba(253, 251, 247, 0.95)), url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=1000') no-repeat center/cover;
+            border-bottom: 1px solid #E6DFD3;
+        }
+
+        .brand-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 600;
+            color: #2C3E35;
+            letter-spacing: -1px;
+        }
+
+        .tagline {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #8A9A86; /* Sage muda */
+            margin-top: 5px;
+            margin-bottom: 25px;
+        }
+
+        .btn-explore {
+            display: inline-block;
+            padding: 12px 28px;
+            background-color: #2C3E35;
+            color: #FDFBF7;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-explore:hover {
+            background-color: #8A9A86;
+            transform: translateY(-2px);
+        }
+
+        /* MAIN CONTAINER */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        /* MENU SECTION */
+        .section-title {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            margin-bottom: 45px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .category-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            border-bottom: 2px solid #2C3E35;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 15px;
+        }
+
+        .item-name {
+            font-weight: 600;
+        }
+
+        .item-dots {
+            flex-grow: 1;
+            border-bottom: 1px dashed #DDD6CA;
+            margin: 0 10px;
+        }
+
+        .item-price {
+            font-weight: 700;
+            color: #8A9A86;
+        }
+
+        /* INFO & ALAMAT */
+        .info-card {
+            background-color: #F4EFE6;
+            border-radius: 16px;
+            padding: 35px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .info-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .info-card p {
+            color: #556B5C;
+        }
+
+        /* FOOTER & MEDSOS */
+        footer {
+            background-color: #2C3E35;
+            color: #FDFBF7;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .social-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            color: #8A9A86;
+        }
+
+        .social-links a {
+            color: #FDFBF7;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #8A9A86;
+        }
+
+        .copyright {
+            margin-top: 30px;
+            font-size: 0.8rem;
+            color: #61786A;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="brand-name">Nadi Kopi</h1>
+        <p class="tagline">Tempat tenang untuk cerita yang panjang</p>
+        <a href="#menu" class="btn-explore">Daftar Menu</a>
+    </header>
+
+    <div class="container">
+        <section id="menu">
+            <h2 class="section-title">Menu Unggulan</h2>
+            
+            <div class="menu-grid">
+                <!-- Kategori Kopi -->
+                <div class="menu-category">
+                    <h3 class="category-title">Coffee Brews</h3>
+                    <div class="menu-item">
+                        <span class="item-name">Espresso</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">15k</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Es Kopi Susu Nadi</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">20k</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Cafe Latte</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">22k</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Caramel Macchiato</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">25k</span>
+                    </div>
+                </div>
+
+                <!-- Kategori Non Kopi -->
+                <div class="menu-category">
+                    <h3 class="category-title">Signature Non-Coffee</h3>
+                    <div class="menu-item">
+                        <span class="item-name">Pure Matcha Latte</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">22k</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Deep Cocoa Chocolate</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">22k</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Artisan Croissant</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">18k</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Truffle Fries</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">15k</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ALAMAT SECTION -->
+        <section class="info-card">
+            <h3>📍 Lokasi Kedai</h3>
+            <p style="font-weight: 600; font-size: 1.1rem; margin-bottom: 5px;">Jl. Merdeka, Kota Tembilahan</p>
+            <p style="font-size: 0.9rem;">Buka Setiap Hari: 10.00 - 23.00 WIB</p>
+        </section>
+    </div>
+
+    <!-- MEDSOS & FOOTER -->
+    <footer>
+        <p class="social-title">Mari Berteman di Sosial Media</p>
+        <div class="social-links">
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://tiktok.com" target="_blank">TikTok</a>
+            <a href="https://wa.me" target="_blank">WhatsApp</a>
+        </div>
+        <p class="copyright">&copy; 2026 Nadi Kopi Tembilahan. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
